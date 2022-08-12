@@ -36,4 +36,8 @@ https://en.wikipedia.org/wiki/Slowly_changing_dimension
 
 https://medium.com/event-driven-utopia/8-practical-use-cases-of-change-data-capture-8f059da4c3b7
 
+https://github.com/jcustenborder/kafka-connect-spooldir
+
+https://github.com/C0urante/kafka-connect-sound/
+
 ---
