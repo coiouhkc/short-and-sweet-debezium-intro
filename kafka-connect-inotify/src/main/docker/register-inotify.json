@@ -1,0 +1,10 @@
+{
+  "name": "inotify-connector",
+  "config": {
+    "connector.class": "org.abratuhi.kafka.connect.inotify.InotifySourceConnector",
+    "source.dir": "/tmp",
+
+    "errors.log.include.messages": "true",
+    "errors.log.enable": "true"
+  }
+}
