@@ -14,11 +14,7 @@ public class InotifySourceConnector extends SourceConnector {
     private Path baseDir;
 
     public void start(Map<String, String> map) {
-        //System.out.println("InotifySourceConnector#start");
-
         this.baseDir = Path.of(map.get(InotifySourceConfig.SOURCE_DIR));
-
-        //System.out.println("InotifySourceConnector#start completed");
     }
 
     public Class<? extends Task> taskClass() {
@@ -26,15 +22,12 @@ public class InotifySourceConnector extends SourceConnector {
     }
 
     public List<Map<String, String>> taskConfigs(int i) {
-        //System.out.println("InotifySourceConnector#taskConfigs " + i);
-
         return List.of(
                 Map.of(InotifySourceConfig.SOURCE_DIR, baseDir.toString())
         );
     }
 
     public void stop() {
-        //System.out.println("InotifySourceConnector#stop");
     }
 
     public ConfigDef config() {

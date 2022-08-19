@@ -8,7 +8,6 @@ import java.util.Map;
 public class InotifySourceConfig extends AbstractConfig {
 
     public static final String SOURCE_DIR = "source.dir";
-    public static final String SOURCE_FILE = "source.file";
 
     public InotifySourceConfig(ConfigDef definition, Map<?, ?> originals) {
         super(definition, originals);

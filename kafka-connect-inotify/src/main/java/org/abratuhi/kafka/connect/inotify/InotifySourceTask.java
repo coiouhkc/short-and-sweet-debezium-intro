@@ -24,7 +24,6 @@ public class InotifySourceTask extends SourceTask {
 
     @Override
     public void start(Map<String, String> props) {
-        //System.out.println("InotifySourceTask#start");
         Path baseDir = Path.of(props.get(InotifySourceConfig.SOURCE_DIR));
 
         new Thread(() -> {
@@ -53,13 +52,10 @@ public class InotifySourceTask extends SourceTask {
                 throw new RuntimeException(e);
             }
         }).start();
-
-        //System.out.println("InotifySourceTask#start completed");
     }
 
     @Override
     public List<SourceRecord> poll() throws InterruptedException {
-        //System.out.println("InotifySourceTask#poll");
         List<SourceRecord> result = new ArrayList<>();
         while(!changes.isEmpty()) {
             String filename = changes.poll();
@@ -70,8 +66,6 @@ public class InotifySourceTask extends SourceTask {
 
     @Override
     public void stop() {
-        //System.out.println("InotifySourceTask#stop");
-
         try {
             this.watchService.close();
         } catch (IOException e) {
