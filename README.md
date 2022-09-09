@@ -6,15 +6,29 @@
 
 ---
 
-# CDC - change data capture
+# Use case: CDC (change data capture)
 
 ---
 
-# Use PKs, Luke
+# Kafka Connect
+
+---
+
+# Debezium
+
+## Kafka connectors for DBs
+
+Note: DBs supporting replication OOB?
+
+---
+
+# Debezium
+
+## Use PKs, Luke (and RTFM)
 
 or [`message.key.columns`](https://debezium.io/documentation/reference/connectors/postgresql.html#postgresql-property-message-key-columns)
 
-or face the consequences
+otherwise - face the consequences
 
 ---
 
