@@ -34,6 +34,8 @@ otherwise - face the consequences
 
 # Useful links
 
+https://docs.confluent.io/platform/current/connect/index.html
+
 https://debezium.io/
 
 https://debezium.io/documentation/reference/stable/architecture.html
